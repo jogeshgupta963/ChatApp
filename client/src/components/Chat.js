@@ -28,7 +28,7 @@ function Chat({ socket, name, room }) {
         socket.on('recieve_message', data => {
             // let list = [...messageList, data];
             setMessageList(list => [...list, data])
-            console.log(messageList)
+            // console.log(messageList)
         })
     }, [socket])
     return (
